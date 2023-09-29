@@ -75,28 +75,23 @@ const i18nObj = {
     }
 };
 
-// Функция для установки перевода на странице
 function getTranslate(language) {
-    // Найти все элементы с атрибутом data-i18n
+
     const elements = document.querySelectorAll('[data-i18n]');
 
-    // Перебрать коллекцию элементов
     elements.forEach(function (element) {
-        // Получить ключ перевода из атрибута dataset.i18n
+
         const translationKey = element.dataset.i18n;
 
-        // Получить текстовое значение для ключа на указанном языке
         const translatedText = i18nObj[language][translationKey];
 
-        // Установить текстовое значение элемента
         element.textContent = translatedText;
     });
 }
 
-// Обработчик события клика для кнопки "Перевести"
-const translateButton = document.getElementById('translateButton');
+const languageToggle = document.getElementById('languageToggle');
 
-translateButton.addEventListener('click', function () {
-    // Вызов функции для перевода на нужный язык (например, 'en' или 'ru')
-    getTranslate('ru'); // Замените 'ru' на нужный вам язык
+languageToggle.addEventListener('change', function () {
+  const language = languageToggle.checked ? 'ru' : 'en';
+  getTranslate(language);
 });
