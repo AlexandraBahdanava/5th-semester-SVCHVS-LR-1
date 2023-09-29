@@ -23,7 +23,18 @@ const i18nObj = {
         'text-title-in-subscribe': 'Sign up to our newsletter',
         'text-in-subscribe': 'Receive special offers and first look at new products.',
         'subscribe-button': 'subscribe',
-        'moments': '',
+        'moments': '#KinnMoments',
+        'help': 'help',
+        'faq': 'FAQs + shipping',
+        'contact': 'contact',
+        'terms': 'terms',
+        'trade': 'trade',
+        'explore': 'explore',
+        'shops': 'shop',
+        'style': 'style quiz',
+        'about': 'about us',
+        'storie': 'stories',
+        'email': 'Need to get in touch? Just email us at '
     },
     'ru': {
         'shop': 'магазин',
@@ -50,7 +61,17 @@ const i18nObj = {
         'text-in-subscribe': 'Получайте специальные предложения и первыми знакомьтесь с новинками.',
         'subscribe-button': 'подписаться',
         'moments': '#KinnМоменты',
-
+         'help': 'помощь',
+        'faq': 'ЧЗВ + доставка',
+        'contact': 'контакт',
+        'terms': 'условия',
+        'trade': 'торговля',
+        'explore': 'исследование',
+        'shops': 'купить',
+        'style': 'викторина',
+        'about': 'о нас',
+        'storie': 'история',
+        'email': 'Хотите связаться? Просто напишите нам: '
     }
 };
 
