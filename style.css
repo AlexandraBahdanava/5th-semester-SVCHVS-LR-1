@@ -4,6 +4,24 @@
 	margin-left: 0;
 }
 
+.audio-container {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.play-button {
+    background-color:  rgba(86, 89, 61, 1);
+    color: #FFFFEF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.play-button.playing {
+    background-color:  rgba(86, 89, 61, 1);
+}
+
 .body.dark-theme{
 	color: black;
 	background-color: #343624;
