@@ -1,4 +1,3 @@
-// Создаем массив с названиями классов элементов, стили которых меняются
 const elementsWithThemeStyles = [
   'body',
   'navbar',

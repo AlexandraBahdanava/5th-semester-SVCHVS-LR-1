@@ -95,3 +95,4 @@ languageToggle.addEventListener('change', function () {
   const language = languageToggle.checked ? 'ru' : 'en';
   getTranslate(language);
 });
+
