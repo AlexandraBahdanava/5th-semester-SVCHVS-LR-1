@@ -80,7 +80,7 @@
 					<div class="content-top-of-page">
 					<h3 data-i18n="h3-content-top-of-page"> all collections </h3>
 					<p data-i18n="p-content-top-of-page"> elevate your everyday </p>
-					<button class="shop-now" data-i18n="shop-now"> shop now </button>
+					<button class="shop-now backlightButton" data-i18n="shop-now"> shop now </button>
 					<script src="backlightButton.js"></script>
 				</div>
 			</div>
@@ -153,18 +153,23 @@
 				Receive special offers and first look at new products.	
 			</p>
 			<hr>
-			<span class="subscribe-button">
-				<button  data-i18n="subscribe-button"> subscribe </button>
-			</span>
+				<button class="subscribe-button backlightButton" data-i18n="subscribe-button"> subscribe </button>
+				<script src="backlightButton.js"></script>
 		</div>
 
 		<div class="moments">
 			<p data-i18n="moments"> #KinnMoments </p>
 			<div class="content-moments"> 
-				<img src="images/image1.png" alt="image1">
-				<img src="images/image2.png" alt="image2">
-				<img src="images/image3.png" alt="image3">
+				<img id="image" src="images/image1.png" alt="image1">
+				<img  src="images/image2.png" alt="image2">
+				<img  src="images/image3.png" alt="image3">
 				<img src="images/image4.png" alt="image4">
+				<span class="subscribe"> 
+					<button id="changeImageBtn" data-i18n="ImageBtn" class="subscribe-button backlightButton">new image</button>
+					<script src="newImage.js"></script>
+					<script src="backlightButton.js"></script>
+				</span>
+				
 			</div>
 		</div>
 	</main>

@@ -288,8 +288,14 @@ main {
 	cursor: pointer;
 }
 
-.shop-now.active {
- background-color: #343624;
+.backlightButton.active {
+	color: rgba(86, 89, 61, 1);
+	background-color: black;
+}
+
+.backlightButton.dark-theme.active {
+	color: rgba(86, 89, 61, 1);
+	background-color: black;
 }
 
 .shop-now.dark-theme{
@@ -595,7 +601,7 @@ main {
 .subscribe.dark-theme hr{
 	border-color : black;
 }
-.subscribe button {
+.subscribe-button {
 	float: left;
 	width: 144px;
 	height: 22px;
@@ -610,7 +616,7 @@ main {
 	cursor: pointer;
 }
 
-.subscribe.dark-theme button{
+.subscribe-button.dark-theme{
 	background-color: #343624;
 	color: black;
 }

@@ -26,7 +26,8 @@ const elementsWithThemeStyles = [
   'footer',
   'help-buttons',
   'explore-buttons',
-  'contacts'
+  'contacts',
+  'subscribe-button'
 ];
 
 const themeToggle = document.getElementById('themeToggle'); 

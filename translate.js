@@ -34,7 +34,8 @@ const i18nObj = {
         'style': 'style quiz',
         'about': 'about us',
         'storie': 'stories',
-        'email': 'Need to get in touch? Just email us at '
+        'email': 'Need to get in touch? Just email us at ',
+        'ImageBtn':'new image'
     },
     'ru': {
         'shop': 'магазин',
@@ -71,7 +72,8 @@ const i18nObj = {
         'style': 'викторина',
         'about': 'о нас',
         'storie': 'история',
-        'email': 'Хотите связаться? Просто напишите нам: '
+        'email': 'Хотите связаться? Просто напишите нам: ',
+        'ImageBtn':'след.картинка'
     }
 };
 

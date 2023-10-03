@@ -1,15 +1,16 @@
-const buttons = document.querySelectorAll('.shop-now');
+function addClickHandlerToButtons(selector) {
+  const buttons = document.querySelectorAll(selector);
 
-buttons.forEach(function (button) {
-  button.classList.remove('active');
-});
+  buttons.forEach(function (button) {
+    button.classList.remove('active');
+    button.addEventListener('click', function (event) {
+      buttons.forEach(function (btn) {
+        btn.classList.remove('active');
+      });
 
-buttons.forEach(function (button) {
-  button.addEventListener('click', function (event) {
-    buttons.forEach(function (btn) {
-      btn.classList.remove('active');
+      event.target.classList.add('active');
     });
-
-    event.target.classList.add('active');
   });
-});
+}
+
+addClickHandlerToButtons('.backlightButton');

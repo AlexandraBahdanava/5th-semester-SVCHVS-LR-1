@@ -1,4 +1,3 @@
-// Function to set language and theme in localStorage
 function setLocalStorage(lang, theme, languageToggleChecked, themeToggleChecked) {
     localStorage.setItem('lang', lang);
     localStorage.setItem('theme', theme);
@@ -6,7 +5,6 @@ function setLocalStorage(lang, theme, languageToggleChecked, themeToggleChecked)
     localStorage.setItem('themeToggleChecked', themeToggleChecked);
 }
 
-// Function to get language and theme from localStorage and apply them
 function getLocalStorage() {
     if (localStorage.getItem('lang')) {
         const lang = localStorage.getItem('lang');
@@ -26,12 +24,11 @@ function getLocalStorage() {
 
 
 function setTheme(theme) {
-    // Remove existing theme classes
+
     document.body.classList.remove('dark-theme', 'light-theme');
-    
-    // Apply the selected theme
+
     if (theme === 'dark') {
-        // Apply dark theme
+
         elementsWithThemeStyles.forEach(function (elementClass) {
             const elements = document.querySelectorAll(`.${elementClass}`);
             elements.forEach(function (element) {
@@ -39,26 +36,23 @@ function setTheme(theme) {
             });
         });
     } else {
-        // Apply light theme (or any other theme)
+
         document.body.classList.add('light-theme');
     }
 }
 
-// Event listener to save language and theme in localStorage before page unload
 window.addEventListener('beforeunload', function() {
-    // Retrieve the user's selected language and theme based on checkboxes
+
     const languageToggle = document.getElementById('languageToggle');
-    const lang = languageToggle.checked ? 'ru' : 'en'; // Assuming 'ru' for Russian and 'en' for English
+    const lang = languageToggle.checked ? 'ru' : 'en'; 
 
     const themeToggle = document.getElementById('themeToggle');
-    const theme = themeToggle.checked ? 'dark' : 'light'; // Assuming 'dark' and 'light' themes
+    const theme = themeToggle.checked ? 'dark' : 'light';
 
-    // Save the checkbox states
     const languageToggleChecked = languageToggle.checked;
     const themeToggleChecked = themeToggle.checked;
 
     setLocalStorage(lang, theme, languageToggleChecked, themeToggleChecked);
 });
 
-// Event listener to get language and theme from localStorage on page load
 window.addEventListener('load', getLocalStorage);
